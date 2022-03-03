@@ -22,8 +22,7 @@ namespace HelpersExtensionMvc.Controllers
 
             string datostienda = HelperTienda.GetInfoTienda(tienda);
             ViewBag.DatosTienda = datostienda;
-            String textoformateado = datostienda.TransformarTexto();
-            System.Diagnostics.Debug.WriteLine(textoformateado);
+         
             return View();
         }
     }
